@@ -17,11 +17,11 @@ struct Patch {
 };
 
 Patch patches[] = {
-	{"D2Client.dll", 0xACE61, 5, GamePacketReceived_Intercept, Call},
-	{"D2Client.dll", 0x70B75, 5, GameInput_Intercept, Call},
-	{"D2Multi.dll", 0xD753, 5, ChannelInput_Intercept, Call},
-	{"D2Multi.dll", 0x10781, 5, ChannelWhisper_Intercept, Call},
-	{"D2Multi.dll", 0x108A0, 6, ChannelChat_Intercept, Jump},
-	{"D2Multi.dll", 0x107A0, 6, ChannelEmote_Intercept, Jump},
+	{"D2Client.dll", 0x83301, 5, GamePacketReceived_Intercept, Call}, //1.13d
+	{"D2Client.dll", 0xB24FF, 5, GameInput_Intercept, Call}, //1.13d
+	{"D2Multi.dll", 0x11D63, 5, ChannelInput_Intercept, Call}, //1.13d
+	{"D2Multi.dll", 0x14A9A, 5, ChannelWhisper_Intercept, Call}, //1.13d
+	{"D2Multi.dll", 0x14BE0, 6, ChannelChat_Intercept, Jump}, //1.13d
+	{"D2Multi.dll", 0x14850, 6, ChannelEmote_Intercept, Jump}, //1.13d
 	{0}
 };
